@@ -1,0 +1,50 @@
+{
+    "name": "adept-digital/wp-framework",
+    "description": "",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Adept Digital",
+            "email": "hello@adpetdigital.com.au"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "adept-digital/wp-base-component": "dev-develop",
+        "league/container": "^3.3",
+        "symfony/polyfill-php80": "^1.22"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "wp-cli/wp-cli-bundle": "^2.4",
+        "adept-digital/wp-base-theme": "dev-develop",
+        "adept-digital/wp-base-plugin": "dev-develop",
+        "mockery/mockery": "dev-master"
+    },
+    "suggest": {
+        "adept-digital/wp-base-theme": "To create a theme",
+        "adept-digital/wp-base-plugin": "To create a plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdeptDigital\\WpFramework\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdeptDigital\\WpFramework\\Tests\\": "tests/",
+            "AdeptDigital\\WpFramework\\TestPlugin\\": "tests/data/test-plugin/src",
+            "AdeptDigital\\WpFramework\\TestTheme\\": "tests/data/test-theme/src",
+            "AdeptDigital\\WpFramework\\TestThemeChild\\": "tests/data/test-theme-child/src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://adept-digital.repo.repman.io"
+        }
+    ]
+}
