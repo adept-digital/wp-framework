@@ -16,7 +16,7 @@ trait ComponentAwareTrait
      *
      * @var ComponentInterface
      */
-    protected ComponentInterface $component;
+    protected $component;
 
     /**
      * @inheritDoc

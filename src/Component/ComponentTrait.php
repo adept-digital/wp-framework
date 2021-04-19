@@ -7,7 +7,6 @@ use AdeptDigital\WpFramework\Container\ContainerFactory;
 use AdeptDigital\WpFramework\Container\ContainerFactoryInterface;
 use League\Container\Argument\RawArgument;
 use League\Container\Container;
-use League\Container\Definition\Definition;
 
 /**
  * Component Trait
@@ -21,14 +20,14 @@ trait ComponentTrait
      *
      * @var Container
      */
-    private Container $container;
+    private $container;
 
     /**
      * Container Factory.
      *
      * @var ContainerFactoryInterface
      */
-    private ContainerFactoryInterface $containerFactory;
+    private $containerFactory;
 
     /**
      * @inheritDoc

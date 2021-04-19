@@ -27,7 +27,7 @@ class ComponentTraitTest extends TestCase
     private function createMockContainerFactory(): ContainerFactoryInterface
     {
         return new class implements ContainerFactoryInterface {
-            private Container $container;
+            private $container;
 
             public function create(): Container
             {

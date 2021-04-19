@@ -17,21 +17,21 @@ class ContainerFactory implements ContainerFactoryInterface
      *
      * @var bool
      */
-    private bool $isAutoWiring = true;
+    private $isAutoWiring = true;
 
     /**
      * Is the factory creating container with shared definitions?
      *
      * @var bool
      */
-    private bool $isDefaultShared = true;
+    private $isDefaultShared = true;
 
     /**
      * Is the factory creating container with cached auto wiring resolutions?
      *
      * @var bool
      */
-    private bool $isCacheResolutions = true;
+    private $isCacheResolutions = true;
 
     /**
      * @inheritDoc

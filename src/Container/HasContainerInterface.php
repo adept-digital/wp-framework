@@ -3,6 +3,7 @@
 namespace AdeptDigital\WpFramework\Container;
 
 use League\Container\Container;
+use Psr\Container\ContainerInterface;
 
 /**
  * Has Container Interface
@@ -17,5 +18,5 @@ interface HasContainerInterface
      *
      * @return Container
      */
-    public function getContainer(): Container;
+    public function getContainer(): ContainerInterface;
 }
