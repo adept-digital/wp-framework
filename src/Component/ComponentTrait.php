@@ -7,6 +7,7 @@ use AdeptDigital\WpFramework\Container\ContainerFactory;
 use AdeptDigital\WpFramework\Container\ContainerFactoryInterface;
 use League\Container\Argument\RawArgument;
 use League\Container\Container;
+use Psr\Container\ContainerInterface;
 
 /**
  * Component Trait
@@ -32,7 +33,7 @@ trait ComponentTrait
     /**
      * @inheritDoc
      */
-    public function getContainer(): Container
+    public function getContainer(): ContainerInterface
     {
         if (!isset($this->container)) {
             $this->container = $this->getContainerFactory()->create();
